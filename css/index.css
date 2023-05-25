@@ -1,3 +1,34 @@
+@charset "UTF-8";
+@font-face {
+  font-family: KBFGDisplay;
+  src: url(../../assets/font/KBFGDisplayL.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: KBFGDisplay;
+  src: url(../../assets/font/KBFGDisplayM.woff) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: KBFGDisplay;
+  src: url(../../assets/font/KBFGDisplayB.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: SpoqaHanSansNeo;
+  src: url(../../assets/font/SpoqaHanSansNeo-Regular.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: SpoqaHanSansNeo;
+  src: url(../../assets/font/SpoqaHanSansNeo-Medium.woff) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: SpoqaHanSansNeo;
+  src: url(../../assets/font/SpoqaHanSansNeo-Bold.woff) format("woff");
+  font-weight: 700;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,43 +40,102 @@
 html,
 body {
   font-size: 62.5%;
+  font-family: "SpoqaHanSansNeo", "sans-serif";
 }
 
 #wrap {
-  padding-top: 60px;
+  padding-top: 10px;
   background-color: #f9f9f9;
 }
 
-header {
-  height: 70px;
-}
-
+/* 공통 inner */
 .inner {
   margin: auto;
   width: 1480px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* header 시작 */
+header {
   position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
+  height: 70px;
+  width: 100%;
+}
+
+header:hover {
+  background-color: #fff;
+}
+
+header .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 3px solid red;
+}
+
+.inner > h1 > a > img {
+  width: 130px;
+  height: 24px;
+  padding: 10px 20px;
+}
+
+/* nav 시작 */
+nav {
+  padding: 10px 20px;
 }
 
 nav ul {
   display: flex;
-}
-
-nav > ul > li {
   position: relative;
-  padding: 0 15px;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 nav > ul > li > a {
-  display: block;
-  padding: 20px 10px;
-  font-size: 1.5rem;
+  padding: 0 10px;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: #707070;
+}
+
+header .inner > div > ul {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inner > div > ul > li > a {
+  padding: 10px;
+  font-size: 1.4rem;
+  color: #707070;
+}
+
+header .inner > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.btn_login {
+  margin: 0 20px;
+  padding: 5px 12px;
+  border: 1px solid #C8C8C8;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  color: #707070;
+  text-align: center;
+}
+
+header .inner > div > div > button {
+  width: 40px;
+  height: 50px;
+  border: none;
+}
+
+header .inner > div > div > button > img {
+  width: 30px;
 }
