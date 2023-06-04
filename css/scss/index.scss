@@ -154,16 +154,16 @@ main {
                         font-weight: 300;
                         color: #707070;
                     }
-                    .item01 {
+                    &.item01 {
                         background-image: url(../../asset/img/icon_car.png);
                     }
-                    .item02 {
+                    &.item02 {
                         background-image: url(../../asset/img/icon_coin.png);
                     }
-                    .item03 {
+                    &.item03 {
                         background-image: url(../../asset/img/icon_corp.png);
                     }
-                    .item04 {
+                    &.item04 {
                         background-image: url(../../asset/img/icon_person.png);
                     }
                     }

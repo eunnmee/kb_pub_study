@@ -194,16 +194,16 @@ main section .left_box ul li a p {
   font-weight: 300;
   color: #707070;
 }
-main section .left_box ul li a .item01 {
+main section .left_box ul li a.item01 {
   background-image: url(../../asset/img/icon_car.png);
 }
-main section .left_box ul li a .item02 {
+main section .left_box ul li a.item02 {
   background-image: url(../../asset/img/icon_coin.png);
 }
-main section .left_box ul li a .item03 {
+main section .left_box ul li a.item03 {
   background-image: url(../../asset/img/icon_corp.png);
 }
-main section .left_box ul li a .item04 {
+main section .left_box ul li a.item04 {
   background-image: url(../../asset/img/icon_person.png);
 }
 
