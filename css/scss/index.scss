@@ -194,8 +194,7 @@ main section {
     background-color: #F5F5F5;
 }
 
-.service_box > h3 {
-    position: relative;
+.service_box > div > h3 {
     width: 260px;
     font-family: "KBFGDisplay";
     margin-bottom: 16px;
@@ -203,20 +202,29 @@ main section {
     font-weight: bold;
 }
 
-.service_box > p {
-    position: absolute;
+.service_box > div > p {
     font-size: 1.5rem;
     color: #707070;
     margin: 15px 0px;
 }
 
-.service_box > div {
+.service_box > ul {
     display: flex;
     align-items: center;
     width: calc(100% - 260px);
 }
 
-.service_box > dIv > ul > li {
+.service_box > ul > li {
     position: relative;
     width: 100%;
+}
+
+.item01 {
+    background-image: url(../../assets/img/icon_car.png);
+}
+.item02 {
+    background-image: url(../../assets/img/icon_car.png);
+}
+.item03 {
+    background-image: url(../../assets/img/icon_car.png);
 }
