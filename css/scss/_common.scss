@@ -1,0 +1,15 @@
+@import "./font";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #303030;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    font-family: "SpoqaHanSansNeo", "sans-serif";
+}
